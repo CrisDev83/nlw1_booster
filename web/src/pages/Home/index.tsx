@@ -13,7 +13,7 @@ const Home = () => {
         <img src={logo} alt="Logo Ecoleta" />
         <Link to="/create-point">
           <span>
-            <FiLogIn />
+            <FiLogIn color="#34CB79"/>
           </span>
           <strong>Cadastre um ponto de coleta</strong>
         </Link>
