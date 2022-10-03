@@ -6,6 +6,13 @@ import { FiArrowLeft } from "react-icons/fi";
 import "./styles.css";
 
 import logo from "../../assets/logo.svg";
+import oleo from '../../assets/oleo.svg';
+import baterias from '../../assets/baterias.svg';
+import lampadas from '../../assets/lampadas.svg';
+import organicos from '../../assets/organicos.svg';
+import papeis from '../../assets/papeis.svg';
+import eletronicos from '../../assets/eletronicos.svg';
+
 
 const CreatePoint = () => {
  
@@ -69,6 +76,32 @@ const CreatePoint = () => {
             <h2>Ítens de Coleta</h2>
             <span>Selecione um ou mais ítens de coleta</span>
           </legend>
+          <ul className="items-grid">
+            <li>
+              <img src={oleo} alt="oleo" />
+              <span>Óleo de cozinha</span>
+            </li>
+            <li className="selected">
+              <img src={baterias} alt="baterias" />
+              <span>Pilhas e Baterias</span>
+            </li>
+            <li>
+              <img src={eletronicos} alt="eletronicos" />
+              <span>Eletrônicos</span>
+            </li>
+            <li>
+              <img src={organicos} alt="organicos" />
+              <span>Resíduos Orgânicos</span>
+            </li>
+            <li>
+              <img src={lampadas} alt="lampadas" />
+              <span>Lâmpadas</span>
+            </li>
+            <li>
+              <img src={papeis} alt="papeis e papelão" />
+              <span>Papel e Papelão</span>
+            </li>
+          </ul>
         </fieldset>
         <button type="submit">Cadastrar ponto de coleta</button>
       </form>
