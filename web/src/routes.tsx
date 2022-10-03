@@ -1,14 +1,14 @@
 import React from 'react';
 import {Route, BrowserRouter} from 'react-router-dom';
 
-import Home from './paginas/Home';
-import CriarPonto from './paginas/CriarPonto';
+import Home from './pages/Home';
+import CreatePoint from './pages/CreatePoint';
 
 const Rotas = () => {
   return (
     <BrowserRouter>
       <Route component={Home} path="/" exact/>
-      <Route component={CriarPonto} path="/criar-ponto"/>
+      <Route component={CreatePoint} path="/create-point"/>
     </BrowserRouter>
   );
 }
