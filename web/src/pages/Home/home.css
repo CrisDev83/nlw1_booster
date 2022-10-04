@@ -120,4 +120,8 @@
   #page-home .content main p {
     font-size: 24px;
   }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
 }

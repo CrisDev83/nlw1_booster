@@ -84,12 +84,8 @@ const CreatePoint = () => {
   }
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>){
-    const {name, value} = event.target;
+    const {name} = event.target;
     setFormData({...formData, [name]: event})
-  }
-
-  function handleSelectItem(){
-    console.log('teste')
   }
 
   return (
@@ -167,27 +163,27 @@ const CreatePoint = () => {
             <span>Selecione um ou mais ítens de coleta</span>
           </legend>
           <ul className="items-grid">
-            <li onClick={handleSelectItem}>
+            <li id="oleo">
               <img src={oleo} alt="oleo" />
               <span>Óleo de cozinha</span>
             </li>
-            <li className="selected" onClick={handleSelectItem}>
+            <li className="selected" >
               <img src={baterias} alt="baterias" />
               <span>Pilhas e Baterias</span>
             </li>
-            <li onClick={handleSelectItem}>
+            <li>
               <img src={eletronicos} alt="eletronicos" />
               <span>Eletrônicos</span>
             </li>
-            <li onClick={handleSelectItem}>
+            <li>
               <img src={organicos} alt="organicos" />
               <span>Resíduos Orgânicos</span>
             </li>
-            <li onClick={handleSelectItem}>
+            <li>
               <img src={lampadas} alt="lampadas" />
               <span>Lâmpadas</span>
             </li>
-            <li onClick={handleSelectItem}>
+            <li>
               <img src={papeis} alt="papeis e papelão" />
               <span>Papel e Papelão</span>
             </li>
